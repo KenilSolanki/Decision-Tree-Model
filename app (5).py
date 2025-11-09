@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
+import pickle
 import joblib
 
 # Load the trained model
-filename = r'c:\Users\Hp\Desktop\delivery_decision_tree_model.pkl'
+filename = r'delivery_decision_tree_model.pkl'
 loaded_model = joblib.load(open(filename, 'rb'))
 
 # Define the correct column names
